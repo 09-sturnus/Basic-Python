@@ -1,17 +1,13 @@
-a = input("a の値を入力: ")
-b = input("b の値を入力: ")
+a = int(input("a の値を入力: "))
+b = int(input("b の値を入力: "))
 
 # TODO
-A = int(a)
-B = int(b)
-a = int(a)
-b = int(b)
+A = a
+B = b
 
 # a > bに大小を固定する
 if b > a:
-    t = b
-    b = a
-    a = t
+    a, b = b, a
 
 while True:
     r = a % b
