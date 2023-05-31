@@ -14,8 +14,8 @@ h = (b - a) / n
 S = 0
 
 f = sin
-for k in range(101):
+for k in range(1, 1+n):
     if k != 0:
-        S += (f((k-1)*h) + f(k*h)) * h/2
+        S += (f(a + (k-1)*h) + f(a + k*h)) * h/2
 
 print(S)
