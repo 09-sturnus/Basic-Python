@@ -1,9 +1,9 @@
 # TODO
-epsilon = 1.0
+epsilon = 0.0
+tmp = 1.0
 
-while True:
-    epsilon = epsilon / 2
-    if not (1 + epsilon > 1):
-        break
+while 1 + tmp > 1:
+    epsilon = tmp
+    tmp /= 2
 
 print(epsilon)
