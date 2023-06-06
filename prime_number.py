@@ -45,10 +45,13 @@ def is_prime(x):
         raise ValueError("Input is not positive")
 
     d = 2
+
+    if x == 1:
+        return False
+    
     while d <= x**0.5:
         if x%d == 0:
             return False
-            break
         else:
             d += 1
     else:
